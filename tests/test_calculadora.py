@@ -1,5 +1,5 @@
 import pytest
-from src.calculadora import soma, subtrai, divide
+from src.calculadora import soma, subtrai, divide, multiplica
 
 def test_soma():
     assert soma(2, 3) == 5
@@ -13,3 +13,6 @@ def test_divide():
 def test_divide_por_zero():
     with pytest.raises(ValueError):
         divide(10, 0)
+
+def test_multiplica():
+    assert multiplica(10,2) == 20
